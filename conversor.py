@@ -5,7 +5,9 @@ if __name__ == "__main__":
     print("a) m -> km")
     print("b) l -> hl")
     print("c) hl -> l")
-    
+    print("d) m2 -> hectares")
+    print("e) hectares -> m2")
+
     opcao = input("> ")
  
     if opcao == "a":
@@ -19,6 +21,13 @@ if __name__ == "__main__":
     elif opcao == "c":
         hl = float(input("hl = "))
         print(f"{hl} hl = {hl*100} l")
+    elif opcao == "d":
+        m2 = float(input("m2 = "))
+        print(f"{m2} m2 = {m2/10000} hectares")
+ 
+    elif opcao == "e":
+        hectares = float(input("hectares = "))
+        print(f"{hectares} hectares = {hectares*10000} m2")
 
  
     else:
